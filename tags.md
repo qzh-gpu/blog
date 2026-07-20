@@ -11,9 +11,8 @@ import { ref, computed } from 'vue'
 
 const activeTag = ref('')
 
-// 统计所有标签及文章数量
 const tagCounts = computed(() => {
-  const map = {}
+  const map: Record<string, number> = {}
   for (const p of posts) {
     for (const t of p.tags) {
       map[t] = (map[t] || 0) + 1
@@ -22,15 +21,10 @@ const tagCounts = computed(() => {
   return Object.entries(map).sort((a, b) => b[1] - a[1])
 })
 
-// 根据选中标签过滤
 const filteredPosts = computed(() => {
   if (!activeTag.value) return posts
   return posts.filter(p => p.tags.includes(activeTag.value))
 })
-
-function toggleTag(tag: string) {
-  activeTag.value = activeTag.value === tag ? '' : tag
-}
 </script>
 
 <div class="tag-cloud">
@@ -39,22 +33,20 @@ function toggleTag(tag: string) {
     :key="tag"
     class="tag-item"
     :class="{ active: activeTag === tag }"
-    @click="toggleTag(tag)"
+    @click="activeTag = activeTag === tag ? '' : tag"
   >
     {{ tag }} ({{ count }})
   </button>
 </div>
 
 <div v-if="activeTag" style="margin-bottom: 24px; color: var(--vp-c-text-2);">
-  筛选标签 "<strong>{{ activeTag }}</strong>" ，共 {{ filteredPosts.length }} 篇文章
+  筛选标签 "<strong>{{ activeTag }}</strong>"，共 {{ filteredPosts.length }} 篇
 </div>
 
-<div class="blog-list" v-if="filteredPosts.length">
+<div v-if="filteredPosts.length" class="blog-list">
   <article v-for="post in filteredPosts" :key="post.url" class="blog-card">
     <div class="card-category">{{ post.category }}</div>
-    <h2 class="card-title">
-      <a :href="post.url">{{ post.title }}</a>
-    </h2>
+    <h2 class="card-title"><a :href="post.url">{{ post.title }}</a></h2>
     <p class="card-desc">{{ post.excerpt }}</p>
     <div class="card-meta">
       <span>{{ post.date }}</span>
@@ -65,6 +57,6 @@ function toggleTag(tag: string) {
   </article>
 </div>
 
-<div v-else-if="activeTag" style="text-align: center; padding: 48px; color: var(--vp-c-text-3);">
+<div v-else-if="activeTag" style="text-align: center; padding: 60px; color: var(--vp-c-text-3);">
   暂无该标签的文章
 </div>

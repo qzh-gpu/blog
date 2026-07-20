@@ -8,11 +8,9 @@ defineProps<{
 
 function getCategoryLabel(cat: string): string {
   const map: Record<string, string> = {
-    leetcode: 'LeetCode',
-    java: 'Java',
-    'system-design': '系统设计',
-    interview: '面试',
-    notes: '随笔'
+    leetcode: '华为高频 LeetCode',
+    rag: 'RAG 场景题',
+    agent: 'Agent 场景题'
   }
   return map[cat] || cat
 }

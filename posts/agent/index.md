@@ -1,14 +1,14 @@
 ---
-title: 华为高频 LeetCode
+title: Agent 场景题
 ---
 
-# 华为高频 LeetCode
+# Agent 场景题
 
-> 收录华为笔试面试中出现频率较高的 LeetCode 题目，包含题目描述、多种解法与复杂度分析。
+> 收录 AI Agent 相关的场景设计题目——智能体架构、工具调用、多 Agent 协作等。
 
 <script setup>
 import { data as posts } from '../../.vitepress/theme/posts.data.ts'
-const list = posts.filter(p => p.category === 'leetcode')
+const list = posts.filter(p => p.category === 'agent')
 </script>
 
 <BlogList :posts="list" :showCategory="false" />

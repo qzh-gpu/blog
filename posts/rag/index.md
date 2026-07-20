@@ -1,14 +1,14 @@
 ---
-title: 华为高频 LeetCode
+title: RAG 场景题
 ---
 
-# 华为高频 LeetCode
+# RAG 场景题
 
-> 收录华为笔试面试中出现频率较高的 LeetCode 题目，包含题目描述、多种解法与复杂度分析。
+> 收录检索增强生成（RAG）相关的场景设计题目与解答思路。
 
 <script setup>
 import { data as posts } from '../../.vitepress/theme/posts.data.ts'
-const list = posts.filter(p => p.category === 'leetcode')
+const list = posts.filter(p => p.category === 'rag')
 </script>
 
 <BlogList :posts="list" :showCategory="false" />
