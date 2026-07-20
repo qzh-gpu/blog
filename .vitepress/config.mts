@@ -4,6 +4,7 @@ export default defineConfig({
   title: '技术博客',
   description: '记录学习文档：LeetCode、Java、系统设计、面试',
   lang: 'zh-CN',
+  base: '/blog/',
 
   markdown: {
     theme: 'one-dark-pro',
