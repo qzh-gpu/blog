@@ -1,2 +1,0 @@
-[    1543ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5174/tags.md?import&t=1784529948158:0
-[    1548ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://localhost:5174/tags/index.md?import&t=1784529948158:0

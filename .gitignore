@@ -3,3 +3,5 @@ dist/
 .vitepress/cache/
 .vitepress/dist/
 .DS_Store
+.playwright-mcp/
+*.png
