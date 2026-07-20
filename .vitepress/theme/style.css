@@ -1,0 +1,226 @@
+/* ===== 全局变量 ===== */
+:root {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #3b82f6 20%, #8b5cf6 80%);
+}
+
+/* ===== 代码块优化 ===== */
+.vp-code-group .blocks {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+div[class*='language-'] {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 移动端代码块横向滚动 */
+div[class*='language-'] pre {
+  overflow-x: auto;
+}
+
+/* ===== 博客列表卡片 ===== */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.blog-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.blog-card .card-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.blog-card .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.blog-card .card-title a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.blog-card .card-title a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.blog-card .card-desc {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  margin: 8px 0 12px;
+}
+
+.blog-card .card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+
+.blog-card .card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.blog-card .card-tag {
+  background: var(--vp-c-bg-soft);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+/* ===== 文章页优化 ===== */
+.post-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.post-header .post-date {
+  color: var(--vp-c-text-3);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.post-header .post-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.post-header .post-tag {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--vp-c-brand-1);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.post-difficulty {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.post-difficulty.easy {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.post-difficulty.medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: #f59e0b;
+}
+
+.post-difficulty.hard {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+/* ===== 标签云 ===== */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 32px 0;
+}
+
+.tag-item {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.tag-item:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.tag-item.active {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  border-color: var(--vp-c-brand-1);
+}
+
+/* ===== 分类快捷入口 ===== */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.category-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.category-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.category-card .cat-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.category-card .cat-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.category-card .cat-count {
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+  margin-top: 4px;
+}
