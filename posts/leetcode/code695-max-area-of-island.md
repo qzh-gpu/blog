@@ -1,7 +1,7 @@
 ---
 title: "岛屿的最大面积 — LeetCode 695"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, DFS, 图, 中等]
+tags: [DFS, LeetCode, 华为高频, DFS, 图, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 695

@@ -1,7 +1,7 @@
 ---
 title: "最小栈 — LeetCode 155"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 栈, 设计, 中等]
+tags: [栈, LeetCode, 华为高频, 栈, 设计, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 155

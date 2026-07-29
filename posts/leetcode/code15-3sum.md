@@ -1,7 +1,7 @@
 ---
 title: "三数之和 — LeetCode 15"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 双指针, 排序, 中等]
+tags: [双指针, LeetCode, 华为高频, 双指针, 排序, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 15

@@ -1,7 +1,7 @@
 ---
 title: "字符串解码 — LeetCode 394"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 栈, 字符串, 中等]
+tags: [栈, LeetCode, 华为高频, 栈, 字符串, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 394

@@ -1,7 +1,7 @@
 ---
 title: "每日温度 — LeetCode 739"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 单调栈, 中等]
+tags: [栈, LeetCode, 华为高频, 单调栈, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 739

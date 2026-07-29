@@ -1,7 +1,7 @@
 ---
 title: "课程表 — LeetCode 207"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, DFS, 图, 拓扑排序, 中等]
+tags: [DFS, LeetCode, 华为高频, DFS, 图, 拓扑排序, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 207

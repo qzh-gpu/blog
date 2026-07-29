@@ -1,7 +1,7 @@
 ---
 title: "接雨水 — LeetCode 42"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 双指针, 单调栈, 困难]
+tags: [双指针, LeetCode, 华为高频, 双指针, 单调栈, 困难]
 category: leetcode
 difficulty: 困难
 leetcodeId: 42

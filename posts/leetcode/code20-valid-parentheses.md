@@ -1,7 +1,7 @@
 ---
 title: "有效的括号 — LeetCode 20"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 栈, 字符串, 简单]
+tags: [栈, LeetCode, 华为高频, 栈, 字符串, 简单]
 category: leetcode
 difficulty: 简单
 leetcodeId: 20

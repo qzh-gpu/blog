@@ -1,7 +1,7 @@
 ---
 title: "环形链表 II — LeetCode 142"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 链表, 快慢指针, Floyd判圈, 中等]
+tags: [快慢指针, LeetCode, 华为高频, 链表, 快慢指针, Floyd判圈, 中等]
 category: leetcode
 difficulty: 中等
 leetcodeId: 142

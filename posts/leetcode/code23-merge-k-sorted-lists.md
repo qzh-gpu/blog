@@ -1,7 +1,7 @@
 ---
 title: "合并 K 个升序链表 — LeetCode 23"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 堆, 优先队列, 链表, 困难]
+tags: [堆, LeetCode, 华为高频, 堆, 优先队列, 链表, 困难]
 category: leetcode
 difficulty: 困难
 leetcodeId: 23

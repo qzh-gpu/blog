@@ -1,7 +1,7 @@
 ---
 title: "滑动窗口最大值 — LeetCode 239"
 date: 2026-07-21
-tags: [LeetCode, 华为高频, 滑动窗口, 单调队列, 困难]
+tags: [滑动窗口, LeetCode, 华为高频, 滑动窗口, 单调队列, 困难]
 category: leetcode
 difficulty: 困难
 leetcodeId: 239
