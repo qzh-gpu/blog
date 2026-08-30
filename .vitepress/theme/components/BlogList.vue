@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import type { Post } from '../posts.data'
 
 defineProps<{
@@ -23,7 +24,7 @@ function getCategoryLabel(cat: string): string {
         {{ getCategoryLabel(post.category) }}
       </div>
       <h2 class="card-title">
-        <a :href="post.url">{{ post.title }}</a>
+        <a :href="withBase(post.url)">{{ post.title }}</a>
       </h2>
       <p class="card-desc">{{ post.excerpt }}</p>
       <div class="card-meta">
