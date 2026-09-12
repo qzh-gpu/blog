@@ -10,6 +10,7 @@ defineProps<{
 function getCategoryLabel(cat: string): string {
   const map: Record<string, string> = {
     leetcode: '华为高频 LeetCode',
+    codetop: 'CodeTop',
     rag: 'RAG 场景题',
     agent: 'Agent 场景题'
   }

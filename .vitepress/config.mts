@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: '技术与面试笔记',
-  description: '华为高频 LeetCode · RAG 场景题 · Agent 场景题',
+  description: '华为高频 LeetCode · CodeTop · RAG 场景题 · Agent 场景题',
   lang: 'zh-CN',
   base: '/blog/',
 
@@ -22,6 +22,7 @@ export default defineConfig({
         text: '分类',
         items: [
           { text: '华为高频 LeetCode', link: '/posts/leetcode/' },
+          { text: 'CodeTop', link: '/posts/leetcode/codetop/' },
           { text: 'RAG 场景题', link: '/posts/rag/' },
           { text: 'Agent 场景题', link: '/posts/agent/' }
         ]
@@ -31,6 +32,28 @@ export default defineConfig({
     sidebar: {
       '/posts/leetcode/': [
         { text: '分类概览', link: '/posts/leetcode/' },
+        {
+          text: 'CodeTop',
+          collapsed: false,
+          items: [
+            { text: '4. 寻找两个正序数组的中位数（二分查找）', link: '/posts/leetcode/codetop/code4-median-of-two-sorted-arrays' },
+            { text: '5. 最长回文子串（字符串 / 双指针）', link: '/posts/leetcode/codetop/code5-longest-palindromic-substring' },
+            { text: '25. K 个一组翻转链表（链表）', link: '/posts/leetcode/codetop/code25-reverse-nodes-in-k-group' },
+            { text: '33. 搜索旋转排序数组（二分查找）', link: '/posts/leetcode/codetop/code33-search-in-rotated-sorted-array' },
+            { text: '82. 删除排序链表中的重复元素 II（链表 / 双指针）', link: '/posts/leetcode/codetop/code82-remove-duplicates-from-sorted-list-ii' },
+            { text: '88. 合并两个有序数组（数组 / 双指针）', link: '/posts/leetcode/codetop/code88-merge-sorted-array' },
+            { text: '103. 二叉树的锯齿形层序遍历（二叉树 / BFS）', link: '/posts/leetcode/codetop/code103-binary-tree-zigzag-level-order-traversal' },
+            { text: '121. 买卖股票的最佳时机（贪心）', link: '/posts/leetcode/codetop/code121-best-time-to-buy-and-sell-stock' },
+            { text: '143. 重排链表（链表 / 快慢指针 / 反转链表）', link: '/posts/leetcode/codetop/code143-reorder-list' },
+            { text: '160. 相交链表（链表 / 双指针）', link: '/posts/leetcode/codetop/code160-intersection-of-two-linked-lists' },
+            { text: '165. 比较版本号（字符串 / 双指针）', link: '/posts/leetcode/codetop/code165-compare-version-numbers' },
+            { text: '199. 二叉树的右视图（二叉树 / BFS）', link: '/posts/leetcode/codetop/code199-binary-tree-right-side-view' },
+            { text: '236. 二叉树的最近公共祖先（二叉树 / 递归 / DFS）', link: '/posts/leetcode/codetop/code236-lowest-common-ancestor-of-a-binary-tree' },
+            { text: '415. 字符串相加（字符串 / 模拟）', link: '/posts/leetcode/codetop/code415-add-strings' },
+            { text: '912. 排序数组（排序 / 快速排序 / 递归）', link: '/posts/leetcode/codetop/code912-sort-an-array' },
+            { text: '1143. 最长公共子序列（动态规划）', link: '/posts/leetcode/codetop/code1143-longest-common-subsequence' }
+          ]
+        },
         {
           text: '双指针',
           collapsed: false,

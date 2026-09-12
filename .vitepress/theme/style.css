@@ -238,10 +238,39 @@ div[class*='language-'] {
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   margin: 20px 0;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 div[class*='language-'] pre {
   overflow-x: auto;
+  min-width: max-content;
+  max-width: none;
+  white-space: pre;
+}
+
+.vp-doc div[class*='language-'] code {
+  white-space: pre;
+}
+
+.vp-doc table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  div[class*='language-'] {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
+  }
 }
 
 /* ==========================================

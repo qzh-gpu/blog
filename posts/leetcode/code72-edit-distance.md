@@ -14,6 +14,14 @@ excerpt: "编辑距离。"
 
 给定两个单词 `word1` 和 `word2`，可以对单词执行插入、删除、替换字符三种操作，求将 `word1` 转换成 `word2` 所需的最少操作次数。
 
+## 示例
+
+```
+输入: word1 = "horse", word2 = "ros"
+输出: 3
+解释: horse -> rorse -> rose -> ros。
+```
+
 ## 代码实现
 
 ```java

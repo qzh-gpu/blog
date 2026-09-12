@@ -4,13 +4,18 @@ title: 华为高频 LeetCode
 
 # 华为高频 LeetCode
 
-> 收录华为笔试面试高频算法题，按解法分类，共 **38** 题。
+> 收录华为笔试面试高频算法题，按解法分类，共 **38** 题；CodeTop 题目作为独立分组放在下方。
 
 <script setup>
 import { data as posts } from '../../.vitepress/theme/posts.data.ts'
 const lc = posts.filter(p => p.category === 'leetcode')
+const codetop = posts.filter(p => p.category === 'codetop')
 const byTag = (tag) => lc.filter(p => p.tags.includes(tag))
 </script>
+
+## CodeTop
+
+<BlogList :posts="codetop" :showCategory="false" />
 
 ## 双指针
 
